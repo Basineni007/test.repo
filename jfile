@@ -1,0 +1,19 @@
+pipeline{
+	agent any
+		stages{
+			stage('printing all first sh script'){
+			steps{
+			sh'''
+			cat one.sh
+			  '''
+			     }
+			}  
+			stage('printing all second sh script'){
+			steps{
+			sh'''
+			cat two.sh
+			 '''
+			 }
+			}
+		}
+	}
